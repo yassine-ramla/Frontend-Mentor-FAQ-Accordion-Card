@@ -1,0 +1,23 @@
+input[type="radio"]:checked+label+p {
+  display: block;
+}
+
+input[type="radio"]+label>h2 {
+  transition: 200ms;
+}
+
+input[type="radio"]:checked+label>h2 {
+  font-weight: bold;
+}
+
+input[type="radio"]+label>img {
+  transition: 200ms;
+}
+
+input[type="radio"]:checked+label>img {
+  transform: rotate(180deg);
+}
+
+label:hover>h2 {
+  color: hsl(14, 88%, 65%);
+}
